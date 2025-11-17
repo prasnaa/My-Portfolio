@@ -1,0 +1,312 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+:root {
+    --primary-color: #2858b0;
+    --secondary-color: #695743;
+    --background-color: #b1a3a2;
+    --text-color: #fff9f9;
+
+}
+html {
+    font-size: ; 60%;
+    overflow-x: hidden;
+}
+body{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+.header{
+    position:fixed
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 5rem 1.6%;
+    background-color:rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+#menu-icons{
+    font-size: 3.5rem;
+    color: var(--text-color);
+    display: none;
+}
+.logo{
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.logo:hover{
+    transform: scale(1.1);
+}
+span{
+    background: linear-gradient(
+        270deg,
+        rgb(20, 79, 91),
+        rgb(40, 95, 95)
+        
+    );
+    background-clip: text;
+    color: transparent;
+}
+.navbar a{
+    font-size:  1.5rem;
+    margin-left:3.5rem;
+    color: var(--text-color);
+    font-weight: 800;
+    transition: 0.3s ease-in-out;
+    border-bottom: 3px solid transparent;
+}
+.navbar a:hover{
+    color: var(--primary-color);
+    border-bottom: 3px solid var(--primary-color);
+}
+.gradient-btn{
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    border-radius: 2rem;
+    background: linear-gradient(
+        270deg,
+        rgb(39, 75, 73),
+        rgb(97, 171, 171)
+    );
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+    border: none;
+    text-wrap: nowrap;
+}
+
+.gradient-btn:hover{
+    transform: scale(1.05);
+}
+section{
+    padding: 10rem 15%;
+    min-height:  100vh;
+
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+}
+.home-content{
+    display: flex;
+    flex-direction: column ;
+    align-items: flex-end;
+    text-align: right;
+}
+.home-content h1{
+    font-size: 3.5rem;
+    font-weight: 500;
+    margin-top: 1.5rem;
+    line-height: 1;
+}
+.home-content h3{
+    font-size: 3rem;
+   margin: 1rem 0;
+}
+.home-content p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8;
+}
+.home-img img{
+    width: 32vw
+    border-radius: 50%;
+    box-shadow: 0 0 25px var(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+.home-img img:hover{
+    box-shadow: #ff6b6b, #f06595;
+    
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background-color: #b1a3a2;
+}
+.about-img img{
+    width: 30vw;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease-in-out;
+}
+.about-img img:hover{
+    box-shadow: #3f1c1c, #29121a;
+}
+.about-content h2{
+    font-size: 4rem;
+   text-align: left;
+}
+.about-content p{
+    font-size: 1rem;
+   
+}
+ .about-content .btn{
+    margin-top: 8rem;
+ }
+ ::-webkit-scrollbar{
+    width: 20px;
+ }
+    ::-webkit-scrollbar-thumb{
+        background: #e1c9c9;
+    }
+    ::-webkit-scrollbar-track{
+        background: #6f3535;
+    }
+    .header{
+        text-align: center;
+        font-size: 7rem;
+        margin: 5rem;
+    
+    }
+    .services{
+        background-color: #b1a3a2;
+        color: rgb(46, 44, 44);
+
+    }
+    .services h1{
+        color: var(--primary-color);
+        
+    }
+    .services-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)  );
+        align-items: center;
+        gap: 2.5rem;
+
+    }
+    .services-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #e0adad;
+        height: 600px;
+        border-radius: 3rem;
+        cursor: pointer;
+        border: 5px solid transparent;
+        transition: 0.4s ease-in-out;
+    }
+    .services-box:hover{
+        background: #bfaca4;
+        color: rgb(240, 240, 240);
+        border: 5px whitesmoke;
+        transform: scale(1.04);
+    }
+    .services-info{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        padding:5rem;
+        
+
+    }
+    .services-info h4{
+        font-size: 2rem;
+        margin: 2rem 0;
+        font-weight: 800;
+    }
+    .services-info p{
+        font-size: 1.2rem;
+        font-weight: 800;
+        line-height: 1.7;
+    }
+    .services-info i{
+        font-size: 6rem;
+        
+    }
+    .projects{
+        background-color:#b1a3a2;
+    }
+    .projects-box{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(800px, 3fr));
+        place-items: center;
+        gap: 8rem;
+        row-gap: 10rem;
+    }
+    .project-card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        background-color: #ab8d8d;
+        border: 2px solid transparent;
+        border-radius: 3rem;
+        gap: 2rem;
+        padding: 2.5rem;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        transition: 0.3s ease;
+
+    }
+    .project-card:hover{
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+        transform: scale(1.02);
+    }
+    .project-card img{
+        max-width: 300px;
+        border-radius: 2em;
+        object-fit: cover;
+    }
+    .project-card h3{
+        font-size: 3rem;
+        
+    }
+    .project-card p{
+        font-size: 1.6rem;
+        
+    }
+    .contact{
+        background-color: #b1a3a2;
+    }
+    .contact h2{
+        margin-bottom: 3rem;
+        color:#d54255;
+    }
+    .contact form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        margin: 5rem 0;
+        text-align: center;
+    }
+    .contact form ,input-box input,
+    .contact form textarea{
+        width: 100%;
+        padding: 2.5rem;
+        font-size: 1.5rem;
+        color: #f06595;
+        background-color: #dc9d9d;
+        border-radius: 2rem;
+        border: 2px solid transparent;
+        margin: 1.5rem 0;
+        resize: none;
+    }
+
+        
+    
+
+
+    
+   
