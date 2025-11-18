@@ -21,12 +21,13 @@ body{
     background-color: var(--background-color);
     color: var(--text-color);
 }
-.header{
-    position:fixed;
+
+header{
+    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
-    padding: 0.5rem 4.5%;
+    padding: 25px 22px;
     background-color:rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(3.5px);
     display: flex;
@@ -34,15 +35,17 @@ body{
     align-items: center;
     z-index: 1000;
 }
-#menu-icons{
+#menu-icon{
     font-size: 3.5rem;
-    color: var(--text-color);
+    color: rgb(105, 105, 189);
     display: none;
 }
+
+
 .logo{
     font-size: 3.5rem;
     font-weight: 800;
-    color: var(--primary-color);
+    color: rgb(100, 179, 189);
     cursor: pointer;
     transition: 0.3s ease-in-out;
     margin-left: 0.5rem;
@@ -51,7 +54,7 @@ body{
     transform: scale(1.1);
 
 }
-span{
+/* span{
     background: linear-gradient(
         270deg,
         rgb(20, 79, 91),
@@ -60,6 +63,12 @@ span{
     );
     background-clip: text;
     color: transparent;
+} */
+
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
 }
 .navbar a{
     font-size:  2.5rem;
@@ -68,13 +77,15 @@ span{
     font-weight: 500;
     transition: 0.3s ease-in-out;
     border-bottom: 10px solid transparent;
+    align-items: center;
+    /* justify-content: space-evenly */
 }
 .navbar a:hover{
     color: var(--primary-color);
     border-bottom: 3px solid var(--primary-color);
 }
 .gradient-btn{
-    padding: 1rem 2rem;
+    padding: 1rem 1.5rem;
     font-size: 2.5rem;
     border-radius: 6rem;
     background: linear-gradient(
@@ -82,12 +93,13 @@ span{
         rgb(63, 102, 173),
         rgb(97, 171, 171)
     );
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     cursor: pointer;
     color: #fff;
     transition: 0.3s ease-in-out;
     border: none;
     text-wrap: nowrap;
+    align-items: center;
 }
 
 .gradient-btn:hover{
@@ -156,6 +168,10 @@ section{
    text-align: left;
    margin-bottom: 15px;
 }
+.about-content h3{
+    font-size: 3rem;
+    margin: 1.5rem 0;
+}
 .about-content p{
     font-size: 2.5rem;
     line-height: 1.5;
@@ -188,12 +204,12 @@ section{
     ::-webkit-scrollbar-track{
         background: #6f3535;
     }
-    .header{
+    /* header{
         text-align: center;
         font-size: 7rem;
         margin: 5rem;
     
-    }
+    } */
     .services{
         background-color: #b1a3a2;
         color: rgb(46, 44, 44);
@@ -203,9 +219,9 @@ section{
 
     }
     .services h1{
-        color: rgb(83, 133, 239);
+        color: rgb(178, 80, 75);
         margin-bottom: 1rem;
-        font-size: 3rem;
+        font-size: 3.5rem;
         
     }
     .services-container{
@@ -259,7 +275,7 @@ section{
     .projects{
         background-color: #b1a3a2;
         margin-bottom: 0.5rem;
-        font-size: 1.5rem;
+        font-size: 2rem;
 
     }
     .projects-box{
@@ -300,7 +316,7 @@ section{
         
     }
     .project-card p{
-        font-size: 1.3rem;
+        font-size: 1.8rem;
         
     }
     .contact{
